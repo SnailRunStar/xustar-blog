@@ -10,6 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # 如果手运行该脚本，则执行if里的，如果是GitHub自动执行该脚本，则是else里的
+echo 'www.starxu.top' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
  msg='deploy'
  githubUrl=git@github.com:SnailRunStar/xustar-blog.git
